@@ -20,11 +20,11 @@ public class Main {
                 System.out.println("Programdan çıkılıyor...");
                 break;
             } else if (islem.equals("1")) {
-                System.out.print("Bakiyeniz = " +bakiye +"TL\n");
+                System.out.print("Bakiyeniz = " + bakiye + "TL\n");
             } else if (islem.equals("2")) {
                 System.out.print("Çekmek istediğiniz tutar = ");
                 int tutar = scanner.nextInt();
-                scanner.nextLine(); 
+                scanner.nextLine();
                 // scannernextIntten sonra scannernextline geldiği için boşluk
                 if (bakiye - tutar < 0) {
                     System.out.println("Yeterli bakiye yok.\n"
@@ -35,13 +35,13 @@ public class Main {
                             + "Yeni bakiyeniz = " + bakiye + "\n");
                 }
             } else if (islem.equals("3")) {
-                    System.out.print("Yatırmak istediğiniz tutar = ");
-                    int tutar = scanner.nextInt();
-                    scanner.nextLine();
-                    bakiye += tutar;
-                    System.out.println("İşleminiz gerçekleştirildi.\n"
-                            + "Yeni bakiyeniz = " + bakiye);
-                    
+                System.out.print("Yatırmak istediğiniz tutar = ");
+                int tutar = scanner.nextInt();
+                scanner.nextLine();
+                bakiye += tutar;
+                System.out.println("İşleminiz gerçekleştirildi.\n"
+                        + "Yeni bakiyeniz = " + bakiye);
+
             } else {
                 System.out.println("Geçersiz işlem !!!");
                 System.out.println(islemler);
