@@ -15,7 +15,7 @@ public class Yönetici extends Calisan{
     }
     
     public void zamYap(int zamMiktarı){
-        System.out.println(getAd() + " çalışanlara " + zamMiktarı + " zam yapıyor...");
+        System.out.println(getAd() + " çalışanlara " + zamMiktarı + " TL zam yapıyor...");
     }
     
 
